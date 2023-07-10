@@ -22,6 +22,7 @@
   background: rgba(51, 55, 59, 0.5);
   border-radius: calc(var(--btnSize) / 2);
   backdrop-filter: blur(20px);
+  will-change: backdrop-filter;
   user-select: none;
   transition: .15s ease;
   cursor: pointer;
