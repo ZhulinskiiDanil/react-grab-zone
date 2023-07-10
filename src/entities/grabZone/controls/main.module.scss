@@ -1,0 +1,36 @@
+.controls {
+  $btnSize: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  margin-right: 10px;
+
+  .button {
+    width: $btnSize;
+    height: $btnSize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc($btnSize / 2.5);
+    font-weight: 900;
+    color: rgba(255, 255, 255, .4);
+    background: rgba(51, 55, 59, 0.5);
+    border-radius: calc($btnSize / 2);
+    backdrop-filter: blur(20px);
+    user-select: none;
+    transition: .15s ease;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+      background: rgba(67, 73, 80, 0.5);
+      color: rgba(255, 255, 255, 1);
+      transform: scale(.9);
+      box-shadow: 0 0 $btnSize 0 rgba(0, 0, 0, .2);
+    }
+  }
+}
