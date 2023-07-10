@@ -1,4 +1,4 @@
-import styles from './styles/main.module.scss'
+import styles from './styles/main.module.css'
 import { GrabZone } from '../entities/grabZone'
 
 export default function App() {

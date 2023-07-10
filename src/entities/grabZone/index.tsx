@@ -1,4 +1,4 @@
-import styles from './main.module.scss'
+import styles from './main.module.css'
 import { PropsWithChildren, useRef, useState } from 'react'
 import { Transformer } from './transformer'
 import { Controls } from './controls'

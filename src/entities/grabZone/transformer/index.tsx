@@ -1,4 +1,4 @@
-import styles from './main.module.scss'
+import styles from './main.module.css'
 import { PropsWithChildren, useEffect } from 'react'
 
 interface ITransformerProps extends PropsWithChildren {

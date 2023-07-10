@@ -1,4 +1,4 @@
-import styles from './main.module.scss'
+import styles from './main.module.css'
 
 interface IControlsProps {
   scale: number
