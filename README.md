@@ -6,14 +6,14 @@
       <img
         width="200"
         height="200"
-        src="https://img001.prntscr.com/file/img001/XleBp61OS8Ws5PPrtBmxzw.png"
+        src="https://img001.prntscr.com/file/img001/YiTXXW7ZTA67dSjfrFU1Sw.png"
       />
     </td>
     <td>
       <img
         width="200"
         height="200"
-        src="https://img001.prntscr.com/file/img001/LQWosPd6TJ6FKdjct9a3Zg.png"
+        src="https://img001.prntscr.com/file/img001/SYHWh-w5RaijNA2ZZcu1Uw.png"
       />
     </td>
   </tr>
