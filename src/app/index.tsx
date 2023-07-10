@@ -5,11 +5,11 @@ import { PropsWithChildren } from 'react'
 export default function App() {
   return <GrabZone minScale={0.5} maxScale={6} power={.2}>
     <table className={styles.container}>
-      <CreateTds count={10} row={1} tdsCount={10} />
-      <CreateTds count={10} row={2} tdsCount={10} />
-      <CreateTds count={14} row={3} tdsCount={10} />
-      <CreateTds count={14} row={4} tdsCount={10} />
-      <CreateTds count={14} row={5} tdsCount={10} />
+      <Cells count={10} countFrom={1} />
+      <Cells count={10} countFrom={11} />
+      <Cells count={14} countFrom={21} />
+      <Cells count={14} countFrom={35} />
+      <Cells count={14} countFrom={49} />
     </table>
   </GrabZone>
 }
@@ -20,27 +20,27 @@ function DialogWindow({ children }: PropsWithChildren) {
   </div>
 }
 
-interface ICreateTdsProps {
+interface ICellsProps {
   count?: number
-  row?: number
   tdsCount?: number
+  countFrom?: number
 }
 
-function CreateTds({
-  count, row = 1, tdsCount = 10
-}: ICreateTdsProps) {
+function Cells({
+  count, countFrom = 1
+}: ICellsProps) {
   if (!count) return <></>
 
   return <tr className={styles.tr}>
     {Array(count).fill(null).map((_, index) => (
-      <td className={styles.td} key={index + row}>
-        { index + 1 + row * tdsCount }
+      <td className={styles.td} key={index + countFrom}>
+        { index + countFrom }
         <DialogWindow>
           <div className={styles.dialogRow}>
-            Row: { row + 1 }
+            Row: { countFrom }
           </div>
           <div className={styles.dialogRow}>
-            Column: { index + 1 + row * tdsCount }
+            Place: { index + countFrom }
           </div>
         </DialogWindow>
       </td>
